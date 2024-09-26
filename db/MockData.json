@@ -1,0 +1,42 @@
+[
+      {
+        "id": 1,
+        "name": "Classic Sneakers",
+        "price": 59.99,
+        "size": 10,
+        "material": "Canvas",
+        "stock": 8
+      },
+      {
+        "id": 2,
+        "name": "Running Shoes",
+        "price": 89.99,
+        "size": 9,
+        "material": "Mesh",
+        "stock": 7
+      },
+      {
+        "id": 3,
+        "name": "Leather Boots",
+        "price": 129.99,
+        "size": 11,
+        "material": "Leather",
+        "stock": 6
+      },
+      {
+        "id": 4,
+        "name": "Sandals",
+        "price": 39.99,
+        "size": 8,
+        "material": "Rubber",
+        "stock": 1
+      },
+      {
+        "id": 5,
+        "name": "Dress Shoes",
+        "price": 99.99,
+        "size": 10,
+        "material": "Leather",
+        "stock": 2
+      }
+    ]
