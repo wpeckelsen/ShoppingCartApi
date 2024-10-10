@@ -22,6 +22,9 @@ namespace ShoppingCartApi.Models
             Stock = stock;
         }
 
+
+        
+
     }
 
 }

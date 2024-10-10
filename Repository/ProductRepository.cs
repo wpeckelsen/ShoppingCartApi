@@ -1,16 +1,15 @@
-using System.IO;
+// using System.IO;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using ShoppingCartApi.Models;
+// using System.Collections.Generic;
+// using ShoppingCartApi.Models;
 
-
-namespace ShoppingCartApi.methods
+namespace ShoppingCartApi.Models
 {
-    public static class DataReader
-    {
-        public static List<Product> LoadAllProductsFromJson()
-        {
 
+    public static class ProductRepository
+    {
+        public static List<Product> returnProducts(){
+         
             try
             {
                 //  use ./ instead of a full path name
@@ -30,10 +29,7 @@ namespace ShoppingCartApi.methods
             catch
             {
                 throw;
-            }
-
-
+            }   
         }
-
     }
 }
