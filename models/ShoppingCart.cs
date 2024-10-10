@@ -1,18 +1,20 @@
 
+using System.Globalization;
+
 namespace ShoppingCartApi.Models
 {
 
     public class ShoppingCart
     {
-        public int Id { get; set; }
-        public int MaxProducts { get; set; }
-        
+        Random rnd = new Random();
+        public int Id { get; private set; }
+        public int MaxProducts = 10;
+
         public Dictionary<int, int> ProductQuantity { get; set; }
 
-        public ShoppingCart(int id, int maxProducts, Dictionary<int, int> productQuantity)
+        public ShoppingCart( Dictionary<int, int> productQuantity)
         {
-            Id = id;
-            MaxProducts = maxProducts;
+            Id = rnd.Next();
             ProductQuantity = productQuantity;
         }
 
