@@ -11,12 +11,18 @@ namespace ShoppingCartApi.Service
         public ShoppingCart createShoppingCart(int productId, int productQuantity)
         {
             Dictionary<int, int> productDictionary = new Dictionary<int, int>();
-            
+
             productDictionary.Add(productId, productQuantity);
 
             ShoppingCart shoppingCart = new ShoppingCart(productDictionary);
 
             return shoppingCart;
+        }
+
+        public Product returnSingleProduct(int productId)
+        {
+            // Product product = new Product();
+            // Product(int id, string name, double price, double size, string material, int stock)
         }
     }
 
