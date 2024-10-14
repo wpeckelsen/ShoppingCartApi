@@ -14,7 +14,7 @@ namespace ShoppingCartApi.Models
             try
             {
                 //  use ./ instead of a full path name
-                string jsonFilePath = "/Users/wessel/vscode/shoppingcartapi/db/MockData.json";
+                string jsonFilePath = "/Users/wessel/vscode/shoppingcartapi/db/MockProducts.json";
 
 
                 string json = File.ReadAllText(jsonFilePath);
@@ -34,19 +34,15 @@ namespace ShoppingCartApi.Models
         }
 
 
-        public static Product ReturnSingleProduct(int productId)
+        public static Product ReturnSingleProductById(int productId)
         {
 
-            string jsonFilePath = "/Users/wessel/vscode/shoppingcartapi/db/MockData.json";
+            string jsonFilePath = "/Users/wessel/vscode/shoppingcartapi/db/MockProducts.json";
             string json = File.ReadAllText(jsonFilePath);
             try
             {
-
                 List<Product> result = JsonConvert.DeserializeObject<List<Product>>(json);
                 Product foundProduct = result.FirstOrDefault(product => product.Id == productId);
-
-
-
                 if (result == null)
                 {
                     throw new Exception("unable to find JSON data!");
